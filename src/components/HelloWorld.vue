@@ -29,6 +29,11 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <el-button type="primary">按钮</el-button>
+    <el-select v-model="selectValue">
+      <el-option label="餐厅名" value="1"></el-option>
+      <el-option label="订单号" value="2"></el-option>
+    </el-select>
   </div>
 </template>
 
@@ -37,6 +42,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      selectValue: '1'
+    }
   }
 }
 </script>
